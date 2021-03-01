@@ -59,6 +59,9 @@ class SiteController extends Controller
      *
      * @return string
      */
+
+    /**kalau user navigate to site/index
+    */
     public function actionIndex()
     {
         return $this->render('index');
