@@ -6,16 +6,22 @@ class PartsController extends \yii\web\Controller
 {
     public function actionIndex()
     {
-        $data= "this is data";
+        //data amik dari database
+        $data= "This is data";
         $data2= "test data";
 
-        $array =[
+        $array [
 
-            'hello'=$data;
-            'halu'=$data2;
-        ]
+            'hello'= $data,
+            'haluu'= $data2
+        ];
 
-        return $this->render('index');
+        print_r($array)
+
+        //$part = new Parts;
+        //$part-> name "D20N";
+
+     return $this->render('index', compact ('data', 'data2') );
     }
 
     public function actionAbout()
